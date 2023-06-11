@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paletería</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Paletería</h1>
+    <div id="cart">
+        
+        <img src="carro.png" alt="Carrito">
+    
+      <span id="cart-items">0</span>
+    </div>
+  </header>
+
+  <section id="productos">
+    <h2>Productos</h2>
+    <br>
+    <br>
+    <br>
+    <div class="product">
+        <h3>Helado de Fresa</h3>
+        <p>Delicioso helado de fresa.</p>
+        <div class="image-container">
+          <img src="fresa.jpg" alt="Helado de Fresa" class="product-image">
+        </div>
+        <p>Precio: $2.50</p>
+        <button class="add-to-cart" data-name="Helado de Fresa" data-price="2.50">Agregar al carrito</button>
+      </div>
+
+    <div class="product">
+      <h3>Helado de Mango</h3>
+      <p>Refrescante helado de mango.</p>
+      <img src="mango.jpg" alt="Helado de Fresa" class="product-image">
+      <p>Precio: $2.75</p>
+      <button class="add-to-cart" data-name="Helado de Mango" data-price="2.75">Agregar al carrito</button>
+    </div>
+  </section>
+
+  <section id="carrito">
+    <h2>Carrito de Compras</h2>
+    
+    <ul id="lista-carrito"></ul>
+    <p id="total-cobro">Total: $<span id="total"></span></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Paletería</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

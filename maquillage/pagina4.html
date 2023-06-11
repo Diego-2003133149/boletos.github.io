@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</section>
+    <section id="lo">
+        <div class="container">
+        </*img src="CRI.png" alt="AGINSE" style="width: 250px;">
+    </div>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="normalize.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+      
+        <div class="container">
+
+           
+
+        </div>
+    </header>
+    
+    <section id="hero9">
+        <img src="l.png" alt="AGINSE" style="width: 250px;">
+        <h1 style="font-size: 40px;">RIFA DE 20,000 PESOS</h1>
+       
+            
+        </form>
+    </section>
+    <section id="VIDA">
+        <div class="container">
+           <div class="img-container"></div>
+           
+           <h2>REQUISITOS<span class="color-acento" style="font-size: 0.9em;"> PARA PARTICIPAR<span></h2> 
+            <p>
+                1. Ser mayor de edad
+                <br>
+                2. Contar con una cuenta bancaria activa para realizar el pago al ganador<br>
+                <br>
+                3. Los premios de autos usados serán entregados a punto convenir del ganador<br>
+                <br>
+                4. Los premios de vehículos nuevos serán entregados en agencias dónde tenemos convenio<br>
+                <br>
+                5. Los sorteos se llevarán a cabo los días martes de la lotería nacional. No hay primer ni segundo lugar. En caso de haber segundo y tercer lugar, será publicado.
+              </p>
+              6 . Recuerda que primero tienes que llenar el formulario para luego ir a pagar a la cuenta bancaria que se te proporcionará.
+            </p>
+               
+ 
+            
+
+            </*img src="coche.svg.svg" alt="AGINSE" style="width: 270px;">
+           
+            </p>
+            <html>
+<head>
+  <title>Página de Boletos</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    
+    .ticket {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      margin: 5px;
+      border: 2px solid white;
+      background-color: black;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 50%;
+    }
+    
+    .ticket.selected {
+      background-color: #3d6aff;
+      border-color: #3d6aff;
+    }
+    
+    #ticketContainer {
+      margin-top: 20px;
+    }
+    
+    #paymentForm {
+      margin-top: 20px;
+    }
+    
+    #paymentForm h2 {
+      margin-bottom: 10px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"], input[type="email"], input[type="number"] {
+      width: 200px;
+      height: 30px;
+      padding: 5px;
+      border: none;
+      background-color: #333;
+      color: white;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="number"]::placeholder {
+      color: #999; 
+    }
+    
+    input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+      outline: none;
+      background-color: #555; 
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      border-radius: 7px;
+      border: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+      background: rgb(61, 106, 255);
+      color: #fff;
+      transition: all 0.2s ease-in;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background: #3d6aff;
+      box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+      transition: all 0.2s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <h1>Selección de Boletos</h1>
+  
+  <div id="ticketContainer">
+    <!-- Generar boletos -->
+    <script>
+      const totalTickets = 200; // Total de boletos disponibles
+      
+      for (let i = 1; i <= totalTickets; i++) {
+        const ticket = document.createElement("div");
+        ticket.className = "ticket";
+        ticket.textContent = i;
+        ticket.addEventListener("click", function() {
+          selectTicket(ticket);
+        });
+        document.getElementById("ticketContainer").appendChild(ticket);
+      }
+      
+      function selectTicket(selectedTicket) {
+        const tickets = document.getElementsByClassName("ticket");
+        
+        for (let i = 0; i < tickets.length; i++) {
+          tickets[i].classList.remove("selected");
+        }
+        
+        selectedTicket.classList.add("selected");
+      }
+    </script>
+  </div>
+  
+  <div id="selectedTicket"></div>
+  
+  <form id="paymentForm" action="https://formspree.io/f/myyaqrqz" method="POST" enctype="multipart/form-data">
+    <h2>Formulario de Pago</h2>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+    <br>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+    <br>
+    <label for="number">Número deseado:</label>
+    <input type="number" id="number" name="number" min="1" max="200" placeholder="Ingresa el número deseado" required>
+    <br>
+    <br>
+    <a id="solicitar-seguro" href="pagina5.html" style="text-decoration:none; color:white;"><button style="border-radius: 10px;"> Pagar</button>
+  </form>
+  <br>
+    <br>
+    <br>
+    <br>
+
+  <div id="messageContainer"></div>
+
+  <script>
+    function removeSelectedTicketAndDisplayMessage() {
+      const selectedTicket = document.querySelector(".ticket.selected");
+      const selectedNumber = document.getElementById("number").value;
+
+      if (selectedTicket) {
+        selectedTicket.style.display = "none";
+      }
+
+      const messageContainer = document.getElementById("messageContainer");
+      const message = document.createElement("p");
+      message.textContent = `¡Número ${selectedNumber} apartado con éxito!`;
+      messageContainer.appendChild(message);
+    }
+  </script>
+</body>
+</html>
+
+
+         
+
+            <div class="carta">
+              
+             <a id="solicitar-seguro" href="pagina5.html" style="text-decoration:none; color:white;"><button style="border-radius: 10px;"> Pagar para participar</button>
+             </div>
+            </div>
+            <br>
+            <br>
+            <a id="solicitar-seguro" href="pagina2.html" style="text-decoration:none; color:white;"><button style="border-radius: 10px;"> Regresar</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+             <script src="//code.tidio.co/itbjojuodthhzqi4q0b4qfmpx442folx.js" async></script>
+
+        </div>
+    </section>
+</body>
